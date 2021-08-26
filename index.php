@@ -19,8 +19,8 @@
         </div>
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="">About us</a></li>
-            <li><a href="">What we do</a></li>
+            <li><a href="/about.html">About us</a></li>
+            <li><a href="/what-we-do.html">What we do</a></li>
             <li><a href="/team.html">Team</a></li>
             <li><a href="">Contact us </a></li>
             <li><a href="/blogs.html">Blog</a></li>
