@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <p><i class="fa fa-phone"></i> +2348038989764, +2347099857485</p>
+    </header>
+    <nav>
+        <div class="brand">
+            <img src="./img/logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About us</a></li>
+            <li><a href="/what-we-do.html">What we do</a></li>
+            <li><a href="/team.html">Team</a></li>
+            <li><a href="">Contact us </a></li>
+            <li><a href="/blogs.html">Blog</a></li>
+        </ul>
+    </nav>
+    <div class="banner-header" style="background-image: url(./img/bg4.jpg);">
+        <!-- <h1 class="title">Blog posts</h1> -->
+        <h1 class="shadow">Team</h1>
+    </div>
+    <div class="home-recent-posts">
+        <h2 class='text-center uppercase heading thin'> Meet the <span class="text-primary strong">Team</span></h2>
+
+        <div class="stack team">
+            <div class="stack-item" style="background-image: url(./img/bg1.webp);background-size: cover;">
+                <img src="/img/avatar2.png" alt="" class="avatar">
+                <div class="content">
+                    <h3>Chinedu Ukpe</h3>
+                    <span>Builder</span>
+                    <p>Send mail</p>
+                </div>
+            </div>
+            <div class="stack-item"  style="background-image: url(./img/bg2.webp);background-size: cover;">
+                <img src="/img/avatar1.jpeg" alt="" class="avatar">
+                <div class="content">
+                    <h3>Chinedu Ukpe</h3>
+                    <span>Builder</span>
+                    <p>Send mail</p>
+                </div>
+            </div>
+            <div class="stack-item"  style="background-image: url(./img/bg6.jpg); background-size: cover;">
+                <img src="/img/avatar3.jpeg" alt="" class="avatar">
+                <div class="content">
+                    <h3>Chinedu Ukpe</h3>
+                    <span>Builder</span>
+                    <p>Send mail</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="https://use.fontawesome.com/c4c1bccc3a.js"></script>
+    <script>
+
+        const nav = document.querySelector('nav')
+         /* Handle scroll */
+         window.addEventListener('scroll', e => {
+            console.log(pageYOffset);
+            if (pageYOffset > 100) {
+                return nav.classList.add('bg-white')
+            }
+            return nav.classList.remove('bg-white');
+        })
+
+
+        const collapsibles = document.querySelectorAll('.collapsible > ul > li > a');
+
+        [].forEach.call(collapsibles, (collapsible, index) => {
+            collapsible.addEventListener('click', e => {
+                e.preventDefault();
+                e.target.parentNode.classList.toggle('active')
+            })
+        })
+
+        /* end handle scroll */
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <p><i class="fa fa-phone"></i> +2348038989764, +2347099857485</p>
+    </header>
+    <nav>
+        <div class="brand">
+            <img src="./img/logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="/what-we-do.html">What we do</a></li>
+            <li><a href="/team.html">Team</a></li>
+            <li><a href="">Contact us </a></li>
+            <li><a href="/blogs.html">Blog</a></li>
+        </ul>
+    </nav>
+    <div class="banner-header" style="background-image: url(./img/bg5.jpg);">
+        <!-- <h1 class="title">Blog posts</h1> -->
+        <h1 class="shadow">About us</h1>
+    </div>
+    <div class="home-recent-posts">
+        <h2 class='text-center uppercase heading thin'> About <span class="text-primary strong">Agriwaves TV</span></h2>
+        <div class="about-container">
+            <div class="section">
+                <div class="content  shadow-sm">
+                    <img src="/img/logo.png" alt="">
+                    <h3 class="text-">Agriwaves media value</h3>
+                    <p>We are a development communication company for influencing growth and transforming agriculture and nutrition in Africa. We recognize how essential communication is in the development of sustainable food systems. Our strategic solutions and innovations are evidence-driven, people-oriented and results-based.
+                        We build partnerships with private sector organisations, governments, NGOs, and anyone who interested in the promotion of food security. We neutralize barriers and open new vistas for sustainable development through design and implementation of quality strategic communications.</p>
+                </div>
+                <div class="img-container">
+                    <img src="/img/cartoon1.png" class="about-cartoon" alt="">
+                </div>
+            </div>
+            <div class="section">
+                <div class="img-container hide-on-mobile">
+                    <img src="/img/cartoon2.png"  alt="">
+                </div>
+                <div class="content shadow-sm">
+                    <h3 class="text text-primary">Our Mission</h3>
+                   <ul> 
+                       <li>To engage in the design and implementation of technical communication innovatively through evidence-based strategies. </li>
+                       <li>To utilize communication as a tool for enhancing development of food systems across Africa. </li>
+                   </ul>
+                   <h3 class="text-primary mt-2">Our Vision</h3>
+                   <p>Our vision is to be leading agricultural media organisation in Africa. </p>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <script src="https://use.fontawesome.com/c4c1bccc3a.js"></script>
+    <script>
+
+        const nav = document.querySelector('nav')
+         /* Handle scroll */
+         window.addEventListener('scroll', e => {
+            console.log(pageYOffset);
+            if (pageYOffset > 100) {
+                return nav.classList.add('bg-white')
+            }
+            return nav.classList.remove('bg-white');
+        })
+
+        const collapsibles = document.querySelectorAll('.collapsible > ul > li > a');
+
+        [].forEach.call(collapsibles, (collapsible, index) => {
+            collapsible.addEventListener('click', e => {
+                e.preventDefault();
+                e.target.parentNode.classList.toggle('active')
+            })
+        })
+        /* end handle scroll */
+    </script>
+</body>
+</html>

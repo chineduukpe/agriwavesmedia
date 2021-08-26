@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <p><i class="fa fa-phone"></i> +2348038989764, +2347099857485</p>
+    </header>
+    <nav>
+        <div class="brand">
+            <img src="./img/logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">What we do</a></li>
+            <li><a href="/team.html">Team</a></li>
+            <li><a href="">Contact us </a></li>
+            <li><a href="/blogs.html">Blog</a></li>
+        </ul>
+    </nav>
+    <div class="banner-header" style="background-image: url(./img/bg5.jpg);">
+        <!-- <h1 class="title">Blog posts</h1> -->
+        <h1 class="shadow">Blog posts</h1>
+    </div>
+    <div class="scene single-blog-post">
+        <div class="tag">Building capacity</div>
+        <img src="./img/bg6.jpg" alt="">
+        <span class="meta"><i class="fa fa-clock-o"></i> 22/01/2020</span>
+        <div class="author">
+            <img src="./img/index.png" alt="">
+            <span>--Chinedu Ukpe</span>
+        </div>
+        <div class="social-share">
+            <a href=""><i class="fa fa-facebook"> <span>Facebook</span></i></a>
+            <a href=""><i class="fa fa-twitter"> <span>Twitter</span></i></a>
+            <a href=""><i class="fa fa-instagram"> <span>Instagram</span></i></a>
+            <a href=""><i class="fa fa-linkedin"></i> <span>Linkedin</span></a>
+        </div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, libero harum necessitatibus quaerat praesentium obcaecati fuga nostrum saepe earum magnam, quisquam iusto consequatur tempore amet? Iste dolorem asperiores laboriosam vel.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, libero harum necessitatibus quaerat praesentium obcaecati fuga nostrum saepe earum magnam, quisquam iusto consequatur m dolor sit amet consectetur adipisicing elit. Maxime, libero harum necessitatibus quaerat praesentium obcaecati fuga nostrum saepe earum magnam, quisquam iusto consequatur temporem dolor sit amet consectetur adipisicing elit. Maxime, libero harum necessitatibus quaerat praesentium obcaecati fuga nostrum saepe earum magnam, quisquam iusto consequatur temporem dolor sit amet consectetur adipisicing elit. Maxime, libero harum necessitatibus quaerat praesentium obcaecati fuga nostrum saepe earum magnam, quisquam iusto consequatur temporetempore amet? Iste dolorem asperiores laboriosam vel.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, libero harum necessitatibus quaerat praesentium obcaecati fuga nostrum saepe earum magnam, quisquam iusto consequatur tempore amet? Iste dolorem asperiores laboriosam vel.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, libero harum necessitatibus quaerat praesentium obcaecati fuga nostrum saepe earum magnam, quisquam iusto consequatur tempm dolor sit amet consectetur adipisicing elit. Maxime, libero harum necessitatibus quaerat praesentium obcaecati fuga nostrum saepe earum magnam, quisquam iusto consequatur temporeore amet? Iste dolorem asperiores laboriosam vel.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, libero harum necessitatibus quaerat praesentium obcaecati fuga nostrum saepe earum magnam, quisquam iusto consequatur temporem dolor sit amet consectetur adipisicing elit. Maxime, libero harum necessitatibus quaerat praesentium obcaecati fuga nostrum saepe earum magnam, quisquam iusto consequatur temporem dolor sit amet consectetur adipisicing elit. Maxime, libero harum necessitatibus quaerat praesentium obcaecati fuga nostrum saepe earum magnam, quisquam iusto consequatur tempore amet? Iste dolorem asperiores laboriosam vel.</p>
+        </div>
+    </div>
+    
+    <script src="https://use.fontawesome.com/c4c1bccc3a.js"></script>
+    <script>
+
+        const nav = document.querySelector('nav')
+         /* Handle scroll */
+         window.addEventListener('scroll', e => {
+            console.log(pageYOffset);
+            if (pageYOffset > 100) {
+                return nav.classList.add('bg-white')
+            }
+            return nav.classList.remove('bg-white');
+        })
+
+        /* end handle scroll */
+    </script>
+</body>
+</html>
